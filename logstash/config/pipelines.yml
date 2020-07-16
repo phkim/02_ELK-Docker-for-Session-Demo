@@ -1,0 +1,27 @@
+# This file is where you define your pipelines. You can define multiple.
+# For more information on multiple pipelines, see the documentation:
+#   https://www.elastic.co/guide/en/logstash/current/multiple-pipelines.html
+
+#- pipeline.id: order_output
+#  path.config: '/usr/share/logstash/pipeline/order_output.conf'
+#  pipeline.workers: 1
+
+#- pipeline.id: customer_output
+#  path.config: '/usr/share/logstash/pipeline/customer_output.conf'
+#  pipeline.workers: 1
+
+#- pipeline.id: product_output
+#  path.config: '/usr/share/logstash/pipeline/product_output.conf'
+#  pipeline.workers: 1
+
+- pipeline.id: order_input
+  path.config: '/usr/share/logstash/pipeline/order_input.conf'
+  pipeline.workers: 1
+
+- pipeline.id: customer_input
+  path.config: '/usr/share/logstash/pipeline/customer_input.conf'
+  pipeline.workers: 1
+
+- pipeline.id: product_input
+  path.config: '/usr/share/logstash/pipeline/product_input.conf'
+  pipeline.workers: 1
