@@ -1,2 +1,5 @@
 # Password File
 .env_password
+
+# Data out put folder
+logstash/data_output
